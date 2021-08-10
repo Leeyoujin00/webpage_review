@@ -1,0 +1,248 @@
+/* 로고 및 기본 설정 */
+body{
+    background-color: #f8f9fa;
+}
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{text-decoration: none;
+z-index: 5;}
+
+.nav-scroller a:hover{text-decoration: underline;
+color:#000;
+font-size:18px}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+/* 리뷰 */
+/* 리뷰 참여하기 누르는 박스*/
+
+#review-item{
+    left: 20%;
+    
+}
+#review-logo{
+    width:50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.review-contentname1 p{
+    margin-top: -40px;
+    margin-left: calc(50px + 7%);
+}
+/* 여는 아이콘 */
+#btn--open {
+    top: 40px;
+    display: block;
+    position: relative;
+    margin-right: 100px; 
+    float: right;   
+}
+
+
+/* 닫는 아이콘 */
+#btn--close {
+    /* display: none; */
+position: relative;
+top:10px;
+float: right;
+padding-right: 40px;
+width:30px;
+cursor: pointer;}
+
+/* 누르면 뜨게 되는 창 */
+#pop{
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 60%;
+    height: 650px;
+    align-items: center; 
+    position: absolute;
+    text-align: left;
+    /* display:none;*/
+} 
+/* 누를 때 창의 배경 */
+nav#outside__menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #000;
+    z-index: 999;
+    opacity: 0.6;
+}
+
+/* 리뷰 안 내용 */
+/* 닉네임 설정하기 리뷰 */
+.form-name{
+    margin-top: -5.5%;
+    margin-left: 20%;
+    height: 25px;
+}
+.review-contentname1/* 리뷰c참여하기*/{
+    margin-left: 43%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+}
+.review-contentname{
+    margin-left: 5%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.review-content{
+    margin-left: 5%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    
+}
+.review-number{
+    margin-left: 65px;
+    word-spacing: 54px;
+
+}
+
+.btn .btn-outline-secondary{
+    border-color: aliceblue;
+    display: block;
+}
+
+
+/* 레이아웃 외곽 너비 400px 제한*/
+.wrap{
+    max-width: 480px;
+    margin: 0 auto; /* 화면 가운데로 */
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.reviewform textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*별점?*/
+.rating{
+    margin-left: 5%;
+}
+.rating .rate_radio {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.rating .rate_radio + label {
+    position: relative;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/starrate/starrate.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+    background-color: dimgray;
+}
+.rating .rate_radio:checked + label {
+    background-color:rgb(255, 217, 0);
+}
+
+.warning_msg {
+    display: none;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    line-height: 26px;
+    width: 100%;
+    color: red;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*가격*/
+.review-pricing{
+    margin-left: 5%;
+}
+.form-range{
+    width: 300px;
+  }
+.review-pricing a{
+    position: relative;
+    top: -7px;
+}
+
+/*누구와의 방문*/
+.btn-group{
+    left: 5%;
+    margin-bottom: 10px;
+}
+/*댓글란*/
+.review-commenting{
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: stretch;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/*submit*/
+#pop .submit{
+    margin-top: 3%;
+    width:100%;
+    white-space: nowrap;
+    /* display: inline-block; */
+    position: relative;
+    bottom: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color
+    
+}

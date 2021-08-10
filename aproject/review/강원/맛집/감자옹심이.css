@@ -1,0 +1,516 @@
+/* 로고 및 기본 설정 */
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{text-decoration: none;
+z-index: 5;}
+
+.nav-scroller a:hover{text-decoration: underline;
+color:#000;
+font-size:18px}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+/* 메뉴바 */
+.sidebar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.sidebar .menubar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.text-center{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+/* search-box*/
+#search-box{
+    position: absolute;
+    margin-right:160px;
+}
+/* search icon */
+#searchicon{
+    position: absolute;
+    margin-right:150px;
+    margin-top: -9px;
+}
+
+/*container */
+.container{
+position: flex;
+margin-left: 8%;
+margin-right: 8%;
+width: 84%;
+}
+
+/*서울> 맛집> 목포집*/
+.route{
+    margin-left: 9%;
+    width: 82%;
+}
+
+/*목포집 타이틀 */
+.themed-grid-col1 {
+    margin-left: 9%;
+    width: 82%;
+    height: 50px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #8bb6f7;
+    border: 1px solid #8bb6f7;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.7; /*투명도 */
+    color: #000;
+    border-radius: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*목포집 이미지 */
+.themed-grid-col2 {
+    margin-left: 9%;
+    width: 20%;
+    height: 170px;
+    /* background-color: #8bb6f7;
+    border: 1px solid #8bb6f7; */
+    padding-left: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #000;
+    border-radius: 20px;
+}
+/*목포집 기본정보 */
+.themed-grid-col3 {
+    margin-left: 30%;
+    width: 61%;
+    height: 170px;
+    position: relative;
+    padding-top: .50rem;
+    padding-left: .50rem;
+    top:-170px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    padding-bottom: .50rem;
+    background-color: #8bb6f7;
+    border: 1px solid #8bb6f7;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.7; /*투명도 */
+    color: #000;
+    border-radius: 20px;
+}
+/* 주요 글씨 두껍게 */
+.themed-grid-col3 b{
+    font-weight: 700;
+    color:black
+}
+.themed-grid-col3 p{
+    color: black;
+}
+/* 로고 및 기본 설정 */
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{text-decoration: none;
+z-index: 5;}
+
+.nav-scroller a:hover{text-decoration: underline;
+color:#000;
+font-size:18px}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+/* 메뉴바 */
+.sidebar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.sidebar .menubar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.text-center{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* search-box*/
+#search-box{
+    position: absolute;
+    margin-right:160px;
+}
+/* search icon */
+#searchicon{
+    position: absolute;
+    margin-right:150px;
+    margin-top: -9px;
+}
+/* 서울>맛집>목포집 */
+.breadcrumb{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+.breadcrumb a{
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+
+}
+
+/* 지도 위치 */
+#maps{
+    position: relative;
+    margin-left: 9%;
+    width:82%;
+    height: 500px;
+    margin-top: -100px;
+    border-radius: 40px;
+}
+/* 거리 계산 버튼 */
+#distance{
+    position: relative;
+    z-index: 5;
+    margin-left: calc(9% + 450px);
+    margin-top:-90px;
+    width: 400px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+
+
+
+/* 리뷰 */
+/* 리뷰 참여하기 누르는 박스*/
+#review-item{
+    left: 20%;
+    
+}
+#review-logo{
+    width:50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.review-contentname1 p{
+    margin-top: -40px;
+    margin-left: calc(50px + 7%);
+}
+/* 여는 아이콘 */
+#btn--open {
+    top: 40px;
+    display: block;
+    position: relative;
+    margin-right: 100px; 
+    float: right;   
+}
+
+
+/* 닫는 아이콘 */
+#btn--close {
+    /* display: none; */
+position: relative;
+top:10px;
+float: right;
+padding-right: 40px;
+width:30px;
+cursor: pointer;}
+
+/* 누르면 뜨게 되는 창 */
+#pop{
+    top: 80%;
+    left: 20%;
+    right: 20%;
+    background-color: #fff;
+    border: 1px solid rgba(86, 61, 124, .2);
+    border-radius: 10px;
+    width: 60%;
+    z-index: 999;
+    height: 600px;
+    align-items: center; 
+    position: absolute;
+    text-align: left;
+    /* display:none;*/
+} 
+/* 누를 때 창의 배경 */
+nav#outside__menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #000;
+    z-index: 999;
+    opacity: 0.6;
+}
+
+/* 리뷰 안 내용 */
+.form-name{
+    margin-top: -5.5%;
+    margin-left: 20%;
+    height: 25px;
+}
+.review-contentname1/* 리뷰c참여하기*/{
+    margin-left: 5%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+}
+.review-contentname{
+    margin-left: 5%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.review-content{
+    margin-left: 5%;
+    color: rgb(0, 17, 255);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    
+}
+.review-number{
+    margin-left: 65px;
+    word-spacing: 54px;
+
+}
+
+.btn .btn-outline-secondary{
+    border-color: aliceblue;
+    display: block;
+}
+
+
+/* 레이아웃 외곽 너비 400px 제한*/
+.wrap{
+    max-width: 480px;
+    margin: 0 auto; /* 화면 가운데로 */
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.reviewform textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*별점?*/
+.rating{
+    margin-left: 5%;
+}
+.rating .rate_radio {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.rating .rate_radio + label {
+    position: relative;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/starrate/starrate.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+    background-color: dimgray;
+}
+.rating .rate_radio:checked + label {
+    background-color:rgb(255, 217, 0);
+}
+
+.warning_msg {
+    display: none;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    line-height: 26px;
+    width: 100%;
+    color: red;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*가격*/
+.review-pricing{
+    margin-left: 5%;
+}
+.form-range{
+    width: 300px;
+  }
+.review-pricing a{
+    position: relative;
+    top: -7px;
+}
+
+/*누구와의 방문*/
+.btn-group{
+    left: 5%;
+    margin-bottom: 10px;
+}
+/*댓글란*/
+.review-commenting{
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: stretch;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/*submit*/
+#pop .submit{
+    margin-top: 3%;
+    margin-left: 88%;
+    width:10%;
+    white-space: nowrap;
+    /* display: inline-block; */
+    position: relative;
+    bottom: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color
+    
+}
+
+/* 리뷰 */
+.col{
+    width: 83%;
+    margin-left: 8.5%;
+    margin-top: 5%;
+    margin-bottom: -20px;
+}
+.col h2{
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+.card-header{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+.card-body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+.card-body h5{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*리뷰 안 공감 버튼*/
+.material-icons-outlined{
+    margin-left: 97%;
+
+}
+
+/* 리뷰 속 별점 */
+.review-rating .rate_radio {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.review-rating .rate_radio + label{
+    margin-left: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/starrate/starrate.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+    background-color: dimgray;
+    margin-top: -10px;
+}
+.review-rating .rate_radio:checked + label {
+    background-color:rgb(255, 217, 0);
+}
+/* footer */
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: #cccccc;
+    top:100px;
+}
+
+
