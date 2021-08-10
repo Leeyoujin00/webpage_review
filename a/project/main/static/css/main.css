@@ -1,0 +1,355 @@
+/* 로고 및 기본 설정 */
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    z-index: 5;
+    color: black;
+}
+
+.nav-scroller a:hover{
+    text-decoration: underline;
+    color:#000;
+    font-size:18px;
+}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;  
+}
+
+/* 메뉴바 */
+.sidebar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.sidebar .menubar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.text-center{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* search-box*/
+#search-box{
+    position: absolute;
+    margin-right:160px;
+}
+/* search icon */
+#searchicon{
+    position: absolute;
+    margin-right:150px;
+    margin-top: -9px;
+}
+
+/* 내위치 */
+.toggle {
+    display: block;
+    font: 1rem "Do Hyeon", serif;
+}
+.switch_wrap{
+    float:left;
+    margin-top:18px;
+}
+.switch_wrap + .switch_wrap{
+    display:none;
+}
+.switch_wrap em{
+    display:inline-block;
+    margin:0 5px 0;
+    font-size:14px;
+    color:#000;
+    vertical-align: middle;
+}
+.mb-3 form-check form-switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 21px;
+}
+.mb-3 form-check form-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* 지도 관련 기본 세팅*/
+#koreamap{
+    position: absolute;
+    height: 900px;
+    width:400px;
+    left: 50%;
+    margin-left: -200px;
+    top:130px;
+   
+}
+.land{
+    fill: #cccccc;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+    cursor: pointer;
+}
+.land:hover{
+    fill: #000;
+}
+
+/* 슬라이더 */
+#carouselExampleFade{
+    /*슬라이더 가운데 정렬 */
+    position: absolute;
+    top: 1180px;
+    left: 50%;
+    margin-left: -480px;
+}
+.carousel-inner{
+    /* 슬라이더 크기 */
+    width: 960px;
+    height: 500px;
+    object-fit: scale-down;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+/*object fit
+fill	기본값. 주어진 너비와 높이에 딱 맞도록 사이즈를 조절합니다. 이미지의 가로세로 비율은 유지되지 않아요.
+contain	가로세로 비율을 유지한 채로 사이즈가 조절되지만, 이미지와 컨테이너 간의 비율이 맞지 않는 경우엔 자리가 남게 됩니다.
+cover	가로세로 비율을 유지한 채로 사이즈가 조절되며, 비율이 맞지 않더라도 이미지를 확대해 컨테이너를 완전히 채웁니다.
+none	아무것도 하지 않고 본래의 이미지 사이즈를 유지합니다. 그래도 이미지 가운데가 보여지도록 하는 센스가 있어요.
+scale-down	none 또는 contain 중에 더 적절한 방향으로 이미지 사이즈를 조절합니다.*/
+
+/* 슬라이더 텍스트 작성 */
+.carousel-item .silder-text{
+    position: absolute;
+    top:350px;
+    left:30px;
+    /* background: blueviolet; */
+    z-index: 50;
+}
+.carousel-item p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.carousel-item h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+
+}
+/* 제목 텍스트 작성 */
+#title1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left:150px;
+}
+#title2{
+    position: absolute;
+    margin-top: 900px;
+   margin-left: 150px;
+}
+#title1 p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+#title2 p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/* footer */
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: #cccccc;
+    top:1600px
+}
+
+
+/* scrolltotop 아이콘 둥둥 뜨게 할 애니메이션 작성 */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+/*Scroll To Top 아이콘 배치 */
+
+#scrollToTop {
+    color: #444343;
+    cursor: pointer;
+    animation: float 6s ease infinite;
+    font-size: 70px;
+    z-index: 5;
+   
+    /* 블록 속성 만들기*/
+    display: inline-block; 
+    position:fixed;
+    bottom:20px;
+    right:3%;
+    opacity:0;
+    transition: 0.4s;
+}
+#current2{
+    width: 100px;
+    height: 300px;
+    display: none;
+}
+.dropdown-item:hover > #current2{
+    display: block;
+}
+/* 메뉴 연습 중 */
+#foods{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#places{
+    margin-left: 30px;
+}
+/*뒤로가기 버튼*/
+.back{
+    width: 10px;
+    height: 10px;
+    margin-top: -23px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.previous{
+    width: 25px;
+    height: 25px;
+}
+#sidemenu1{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7;
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 10;
+    font-family: 'Nanum Gothic', sans-serif;
+     font-size: 18px;
+    font-weight: 400;
+}
+.sidemenu1-header{
+    position: block;
+    padding: 25px;
+    width: 250px;
+    background-color: #5194f8b7;
+    transition: .4s;
+    z-index: 10;
+}
+#menulist1,#menulist1-0,#menulist1-1,#menulist1-2,#menulist1-3,#menulist1-4,#menulist1-5,#menulist1-6,#menulist1-7,#menulist1-8,#menulist1-9,#menulist1-10{
+    top:65px;
+    position: absolute;
+    list-style: none;
+    /* font-size: 20px; */
+    line-height: 40px;
+    /* font-weight: 600; */
+}
+#sidemenu1-0,#sidemenu2-0{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 10;
+}
+#sidemenu1-1,#sidemenu1-2,#sidemenu1-3,#sidemenu1-4,#sidemenu1-5,#sidemenu1-6,#sidemenu1-7,#sidemenu1-8,#sidemenu1-9,#sidemenu1-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 10;
+}
+#menulist2-0,#menulist2-1,#menulist2-2,#menulist2-3,#menulist2-4,#menulist2-5,#menulist2-6,#menulist2-7,#menulist2-8,#menulist2-9,#menulist2-10{
+    top:50px;
+    position: absolute;
+    list-style: none;
+
+}
+#sidemenu2-1,#sidemenu2-2,#sidemenu2-3,#sidemenu2-4,#sidemenu2-5,#sidemenu2-6,#sidemenu2-7,#sidemenu2-8,#sidemenu2-9,#sidemenu2-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    
+}
+.arrow-icon{
+    position: absolute;
+    margin-left: 10px;
+}
+/* 목표, 설명 팝업창  */
+.explanation{
+    width: 36px;
+    margin-left: -58%;
+}
+.bulb_icon{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.5;
+    top: 15px;
+    width: auto;
+}
+.close_icon{
+    float: right;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+#page{
+    z-index: 10;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #8bb6f7;
+    border:1px solid #8bb6f7;  padding:10px;
+    top: 60px;
+    border-radius: 10px;
+    display: none;
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+/* 아이콘 hover 기능 */
+.bulb_icon:hover{
+    background-image: url(/images/question1.png);
+    opacity: 1;
+}
+.close_icon:hover{
+    opacity: 1;
+}

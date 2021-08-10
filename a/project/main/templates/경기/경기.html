@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/경기.css">
+    <title>전국 여행의 시작, 이곳저곳</title>
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="../../static/images/world.png" />
+    <!--js-->
+    <script defer src="../../static/js/경기.js"></script>
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+              <!-- 사이드바 -->    
+            <div class="sidebar"> 
+              <svg xmlns="http://www.w3.org/2000/svg" class="menubar" viewbox="0 0 16 16" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">인기</button></li>
+                <li><button class="dropdown-item" type="button">먹거리 추천(맛집)</button></li>
+                <li><button class="dropdown-item" type="button">관광 명소</button></li>
+              </ul>
+            </div>
+            <div class="col-4 text-center">
+              <!-- 로고 이미지 -->
+              <a class="blog-header-logo text-dark" href="/"><img id="logo" src="../../static/images/world.png" alt="logo"> 이곳저곳</a>  
+            </div>
+            <!--검색/로그인/회원가입-->
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <!--검색박스(searchbox)-->
+              <input type="search" id="search-box" name="q" placeholder="검색어를 입력하시오" aria-label="Search through site content">
+              <!--검색 아이콘과 둘러싸는 주변 부분-->
+              <a id="searchicon" class="link-secondary" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" ><title>검색</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+              </a>
+              <!--로그인, 회원가입-->
+              <a class="btn btn-sm btn-outline-secondary" href="/login/">로그인</a>
+              &nbsp; 
+              <a class="btn btn-sm btn-outline-secondary" href="/signup/">회원가입</a>
+            </div>
+          </div>
+        </header>
+      
+              
+          <div class="nav-scroller py-1 mb-2">
+            <hr>
+            <nav class="nav d-flex justify-content-between">
+              <a class="p-2 link-secondary" href="/서울">서울</a>
+            <a class="p-2 link-secondary" href="/경기">경기</a>
+            <a class="p-2 link-secondary" href="/강원">강원</a>
+            <a class="p-2 link-secondary" id="underline1" href="/경북">경북</a>
+            <a class="p-2 link-secondary" id="underline2" href="/경남">경남</a>
+            <a class="p-2 link-secondary" id="underline3" href="/충북">충북</a>
+            <a class="p-2 link-secondary" id="underline4" href="/충남">충남</a>
+            <a class="p-2 link-secondary" id="underline5" href="/전북">전북</a>
+            <a class="p-2 link-secondary" id="underline6" href="/전남">전남</a>
+            <a class="p-2 link-secondary" id="underline7" href="/제주">제주</a>
+             </nav>
+            <hr>
+          </div>
+        
+  <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
+  <div class="row mb-3">
+    <a class="col themed-grid-col1" href="/경기/">Home</a>
+    <a class="col themed-grid-col2" href="/경기/맛집/">먹거리 추천(맛집)</a>
+    <a class="col themed-grid-col3" href="/경기/명소/">관광명소</a>
+  </div>
+
+    <main class="container">
+      <div class="background">
+      <h2 class="home_title" >Today's PICK</h2>
+      <a href="/경기/명소/광명동굴">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-광명동굴.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">광명동굴</h5>
+                    <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 보뚱치길 89 1층</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 어른-6,000원/ 어른(단체)-5,000원/ 군인-4,000원/ 군인(단체)-3,500원/ 청소년-3,500원</small></p>
+                    <p class="card-text"><small><b>영업시간:</b>10:00~18:00 </small></p>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </a>
+      
+        <a href="/경기/명소/백운계곡">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-백운계곡.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">백운계곡</h5>
+                    <p class="card-text"><small><b>주소:</b> 경기 포천시 이동면 도평리</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 무료</small></p>
+                    <p class="card-text"><small><b>영업시간:</b> 24시간 개방 </small></p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </a>
+  
+      <a href="/경기/명소/경기에버랜드">
+      <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-에버랜드.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">에버랜드</h5>
+                    <p class="card-text"><small><b>주소:</b>경기 용인시 처인구 포곡읍 에버랜드로 199</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 자유이용권- 30000만원 이하(특가,할인 등에 따라 다름)</small></p>
+                    <p class="card-text"><small><b>개장시간:</b> 10:00-21:00 </small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </a>
+
+    <a href="/경기/맛집/보뚱치89">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-보뚱치89.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">보뚱치89</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 보뚱치길 89 1층</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 카페라떼 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b>10:00~18:00 </small></p>
+                </div>
+            </div>
+        </div>
+     </div>  
+   </a>
+
+   <a href="/경기/맛집/산으로간고등어">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-산으로간고등어.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">산으로간고등어</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 용인시 수지구 고기로 126 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>고등어구이, 갈치구이, 삼치구이, 임연수구이 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 17:00</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/서현실비">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-서현실비.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">서현실비</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 성남시 분당구 황새울로311번길 14 서현리더스빌딩</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>숙성목살, 두툼오겹살, 얇은오겹살, 가브리살, 항정살, 갈비쪽살 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:30 - 22:30(연중무휴) / 런치-월~금 14:00까지</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/이음만두">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-이음만두.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">이음만두</h5>
+                  <p class="card-text"><small><b>주소:</b> 경기 광주시 오포읍 문형산길 74</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>명품한우시래기만두 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00~22:00 </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </a>
+
+  <a href="/경기/맛집/이태리동">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-이태리동.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">이태리동</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 수원시 팔달구 향교로 27-1 리오빌딩 지하1층 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>까르보나라, 스텔라피자, 마르게리따 피자, 부채살 스테이크, 라코타 치즈 샐러드 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:30 - 21:30 (Last order 8:30 p.m.)</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>  
+
+  <a href="/경기/맛집/채향원">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-채향원.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">채향원</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 봉골길171번길 8</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>유황오리백숙찰밥, 모듬바베큐 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00~21:30 </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/태화산명가">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-태화산명가.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">태화산명가</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 도척윗로 35</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>숯불닭갈비, 냉모밀, 막국수 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00 - 21:30 (월요일 휴무) </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/헨디로벨리">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-헨디로벨리.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">헨디로벨리</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 고양시 덕양구 통일로893번길 62 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>생목살, 폭립, 핸드드랍커피 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b>평일 17:00 - 23:00(상담시간 11:00~20:00)[월요일, 화요일 휴무], 주말 12:00 - 23:00 </small></p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/LOFT1010">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-LOFT1010.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">LOFT1010</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 신대길34번길 10-14</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 마늘빵빵, 치킨 샌드위치 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 11:00~22:00 </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/궁뜰">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-궁뜰.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">궁뜰 맛있는발표밥상</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 신대길34번길 10-14</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 마늘빵빵, 치킨 샌드위치 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 21:00</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/두메산골집">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-두메산골집.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <class class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">두메산골집</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 남한산성면 불당길37번길 66-11</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>오리구이(한마리), 능이버섯백숙, 한방백숙(한마리) 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 20:00 </small></p>
+          </div>
+        </class>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/위베이크">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-위베이크.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">위베이크</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 남한산성면 남한산성로 59-3</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>히비스커스 유자티, 몽블랑 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 10:30 -21:00</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/추자리막국수">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-추자리막국수.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">추자리막국수</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 오포로859번길 6</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>물/비빔 막국수(소불고기전골 포함) 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00-21:00 (브레이크 타임 16:00-17:00)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+      </div>
+    </main>
+    <!--scroll to top -->
+    <div class="material-icons-outlined" id="scrollToTop">arrow_circle_up</div>
+    </div> 
+  </body>
+
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer> 
+</html>

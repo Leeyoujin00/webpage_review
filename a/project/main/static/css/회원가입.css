@@ -1,0 +1,8 @@
+.container {
+    max-width: 960px;
+}
+
+.row{
+    margin-right: -140px;
+    padding-left: 50px;
+}

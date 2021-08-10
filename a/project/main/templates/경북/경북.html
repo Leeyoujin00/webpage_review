@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/경북.css">
+    <title>전국 여행의 시작, 이곳저곳</title>
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="../../static/images/world.png" />
+    <!--js-->
+    <script defer src="../../static/js/경북.js"></script>
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+              <!-- 사이드바 -->    
+            <div class="sidebar"> 
+              <svg xmlns="http://www.w3.org/2000/svg" class="menubar" viewbox="0 0 16 16" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">인기</button></li>
+                <li><button class="dropdown-item" type="button">먹거리 추천(맛집)</button></li>
+                <li><button class="dropdown-item" type="button">관광 명소</button></li>
+              </ul>
+            </div>
+            <div class="col-4 text-center">
+              <!-- 로고 이미지 -->
+              <a class="blog-header-logo text-dark" href="/"><img id="logo" src="../../static/images/world.png" alt="logo"> 이곳저곳</a>  
+            </div>
+            <!--검색/로그인/회원가입-->
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <!--검색박스(searchbox)-->
+              <input type="search" id="search-box" name="q" placeholder="검색어를 입력하시오" aria-label="Search through site content">
+              <!--검색 아이콘과 둘러싸는 주변 부분-->
+              <a id="searchicon" class="link-secondary" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" ><title>검색</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+              </a>
+              <!--로그인, 회원가입-->
+              <a class="btn btn-sm btn-outline-secondary" href="/login">로그인</a>
+              &nbsp; 
+              <a class="btn btn-sm btn-outline-secondary" href="/signup">회원가입</a>
+            </div>
+          </div>
+        </header>
+        <main>          
+          <div class="nav-scroller py-1 mb-2">
+            <hr>
+            <nav class="nav d-flex justify-content-between">
+              <a class="p-2 link-secondary-main" href="/서울">서울</a>
+              <a class="p-2 link-secondary" href="/경기">경기</a>
+              <a class="p-2 link-secondary" href="/강원">강원</a>
+              <a class="p-2 link-secondary" id="underline1" href="/경북">경북</a>
+              <a class="p-2 link-secondary" id="underline2" href="/경남">경남</a>
+              <a class="p-2 link-secondary" id="underline3" href="/충북">충북</a>
+              <a class="p-2 link-secondary" id="underline4" href="/충남">충남</a>
+              <a class="p-2 link-secondary" id="underline5" href="/전북">전북</a>
+              <a class="p-2 link-secondary" id="underline6" href="/전남">전남</a>
+              <a class="p-2 link-secondary" id="underline7" href="/제주">제주</a>
+            </nav>
+            <hr>
+          </div>
+        </main>
+    <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
+    <div class="row mb-3">
+      <a class="col themed-grid-col1" href="/경북">Home</a>
+      <a class="col themed-grid-col2" href="/경북/맛집">먹거리 추천(맛집)</a>
+      <a class="col themed-grid-col3" href="/경북/명소">관광명소</a>
+    </div>
+
+    <main class="container">
+      <div class="background">
+      <h2 class="home_title" >Today's PICK</h2>
+      <a href="/경북/명소/경주 동궁원">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경주-동궁원.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">경주 동궁원</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div></a>
+      <a href="/경북/명소/구미 에코랜드">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경북-구미 에코랜드.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">구미 에코랜드</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div></a>
+      <a href="/경북/맛집/새포항물회집">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경북-새포항물회집.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">새포항물회집</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div></a>
+      <a href="/경북/맛집/포갈집">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경북-포갈집.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">포갈집</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </a>
+  
+      <a href="/경북/맛집/플랜에이">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경북-플랜에이.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">플랜에이</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div></a>
+  
+      <a href="/경북/맛집/맛감자탕">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경북-맛감자탕.jpg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">맛감자탕</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+              </div>
+          </div>
+      </div></a>
+      </div>
+    </main>
+    <!--scroll to top -->
+    <div class="material-icons-outlined" id="scrollToTop">arrow_circle_up</div>
+    </div> 
+  </body>
+
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer> 
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/강원 맛집.css">
+    <title>전국 여행의 시작, 이곳저곳</title>
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="../../static/images/world.png" />
+    <!--js-->
+    <script defer src="../../static/js/another.js"></script>
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+              <!-- 사이드바 -->    
+            <div class="sidebar"> 
+              <svg xmlns="http://www.w3.org/2000/svg" class="menubar" viewbox="0 0 16 16" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">인기</button></li>
+                <li><button class="dropdown-item" type="button">먹거리 추천(맛집)</button></li>
+                <li><button class="dropdown-item" type="button">관광 명소</button></li>
+              </ul>
+            </div>
+            <div class="col-4 text-center">
+              <!-- 로고 이미지 -->
+              <a class="blog-header-logo text-dark" href="/"><img id="logo" src="../../static/images/world.png" alt="logo"> 이곳저곳</a>  
+            </div>
+            <!--검색/로그인/회원가입-->
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <!--검색박스(searchbox)-->
+              <input type="search" id="search-box" name="q" placeholder="검색어를 입력하시오" aria-label="Search through site content">
+              <!--검색 아이콘과 둘러싸는 주변 부분-->
+              <a id="searchicon" class="link-secondary" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" ><title>검색</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+              </a>
+              <!--로그인, 회원가입-->
+              <a class="btn btn-sm btn-outline-secondary" href="/login/">로그인</a>
+              &nbsp; 
+              <a class="btn btn-sm btn-outline-secondary" href="/signup/">회원가입</a>
+            </div>
+          </div>
+        </header>
+      
+              
+          <div class="nav-scroller py-1 mb-2">
+            <hr>
+            <nav class="nav d-flex justify-content-between">
+              <a class="p-2 link-secondary" href="/서울">서울</a>
+              <a class="p-2 link-secondary" href="/경기">경기</a>
+              <a class="p-2 link-secondary" href="/강원">강원</a>
+              <a class="p-2 link-secondary" id="underline1" href="/경북">경북</a>
+              <a class="p-2 link-secondary" id="underline2" href="/경남">경남</a>
+              <a class="p-2 link-secondary" id="underline3" href="/충북">충북</a>
+              <a class="p-2 link-secondary" id="underline4" href="/충남">충남</a>
+              <a class="p-2 link-secondary" id="underline5" href="/전북">전북</a>
+              <a class="p-2 link-secondary" id="underline6" href="/전남">전남</a>
+              <a class="p-2 link-secondary" id="underline7" href="/제주">제주</a>
+            </nav>
+            <hr>
+          </div>
+        
+  <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
+  <div class="row mb-3">
+    <a class="col themed-grid-col1" href="/강원/">Home</a>
+    <a class="col themed-grid-col2" href="/강원/맛집/">먹거리 추천(맛집)</a>
+    <a class="col themed-grid-col3" href="/강원/명소/">관광명소</a>
+  </div>
+
+  
+  
+  <div class="background">
+    <a href="/강원/맛집/만석닭강정(본점)">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/강원-만석닭강정본점.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">만석닭강정(본점)</h5>
+                  <p class="card-text"><small><b>주소:</b>강원 속초시 청초호반로 72</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>후라이드, 닭강정  등</small></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="/강원/맛집/참나무숯불닭갈비">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/강원-참나무숯불닭갈비.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">참나무숯불닭갈비</h5>
+                  <p class="card-text"><small><b>주소:</b>강원 춘천시 신북읍 신샘밭로 715</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>매운 맥반석 숯불닭갈비, 맥반석 숯불닭갈비, 메밀막국수 등</small></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="/강원/맛집/감자옹심이/">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/강원-감자옹심이한식.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">감자옹심이</h5>
+                  <p class="card-text"><small><b>주소:</b>강원 속초시 번영로 105번길 30 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>감자옹심이, 감자전, 감자옹심이 칼국수  등</small></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="/강원/맛집/충주상회/">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/강원-충주상회.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">충주상회</h5>
+                  <p class="card-text"><small><b>주소:</b>강원 속초시 중앙로147번길 39 충주상회 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>수제 오징어 꽃순대 등</small></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="/강원/맛집/올드문/">
+      <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/강원-올드문.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">올드문</h5>
+                    <p class="card-text"><small><b>주소:</b>강원 원주시 봉바위길 54-1</small></p>
+                    <p class="card-text"><small><b>대표메뉴:</b>횡성한우버거, 빙수, 방탄커피 등</small></p>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </a>
+ 
+
+      
+    <!--scroll to top -->
+    <div class="material-icons-outlined" id="scrollToTop">
+      arrow_circle_up
+    </div> 
+    
+  </div>
+  </div>
+</body>
+
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+ </footer> 
+</html>
